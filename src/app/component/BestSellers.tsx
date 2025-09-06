@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Montez } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
@@ -104,18 +104,20 @@ function BestSellers() {
   ];
   const visiblecard = myMap.slice(currentIndex, currentIndex + 5);
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 6 >= myMap.length ? 0 : prev + 1));
-  };
+  const handleNext = useCallback(() => {
+  setCurrentIndex((prev) =>
+    prev + 6 >= myMap.length ? 0 : prev + 1
+  );
+}, [myMap.length]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? myMap.length - 6 : prev - 1));
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 7000);
-    return () => clearInterval(interval);
-  }, [handleNext]);
+  const interval = setInterval(handleNext, 7000);
+  return () => clearInterval(interval);
+}, [handleNext]);
 
   return (
     <>

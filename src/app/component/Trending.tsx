@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Montez } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import { useInView } from "react-intersection-observer";
@@ -105,11 +105,11 @@ function Trending() {
   ];
   const visiblecard = myMap.slice(currentIndex, currentIndex + 5);
 
-  const handleNext = () => {
-    setCurrentIndex((prev) =>
-      prev + 6 >= myMap.length ? 0 : prev + 1
-    );
-  };
+  const handleNext = useCallback(() => {
+  setCurrentIndex((prev) =>
+    prev + 6 >= myMap.length ? 0 : prev + 1
+  );
+}, [myMap.length]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) =>
@@ -131,14 +131,14 @@ function Trending() {
             inView ? "animate-slideUp opacity-100" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="pb-4">DON'T MISS OUT</div>
+          <div className="pb-4">{"DON'T MISS OUT"}</div>
           <div className="flex gap-1">
             <div className={`${playfair.className} text-3xl md:text-6xl font-bold`}>
-              Now{" "}
+              {"Now"}{" "}
             </div>
             <span className={`${montez.className} text-3xl md:text-6xl m-2`}>
               {" "}
-              Trending
+              {"Trending"}
             </span>
           </div>
         </div>
@@ -249,7 +249,7 @@ function Trending() {
                   </div>
                   <div className=" opacity-0 group-hover:opacity-100  transition-opacity duration-500">
                     <button className=" border px-12 py-2 hover:bg-black hover:text-white hover:underline cursor-pointer  ">
-                      Add to Cart
+                      {"Add to Cart"}
                     </button>
                   </div>
                 </div>
