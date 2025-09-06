@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   experimental: {
-    optimizeCss: false, // disable lightningcss
+    optimizeCss: false, // disables lightningcss
   },
 };
 
