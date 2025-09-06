@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Image from "next/image";
 
 export default function Home() {
@@ -100,4 +101,13 @@ export default function Home() {
       </footer>
     </div>
   );
+=======
+"use client";
+import Home from "./page/Home";
+export default function Homeq() {
+  return(<>
+   <Home />
+   </>
+  )
+>>>>>>> 8bd0383 (Initial commit)
 }
