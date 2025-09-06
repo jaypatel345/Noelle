@@ -109,6 +109,8 @@ function VibrantLips() {
               <Image
                 src="/lips.jpg"
                 alt="Lipsticks"
+                width={500}
+                      height={300}
                 className="w-full h-full object-cover"
               />
             </div>

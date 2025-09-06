@@ -160,11 +160,15 @@ function Trending() {
                     <Image
                       src={item.image}
                       alt={item.text}
+                      width={500}
+                      height={300}
                       className="w-28 h-40 md:w-42 md:h-65 object-cover mb-2 flex-shrink-0"
                     />
                     <Image
                       src={item.hoverImage}
                       alt={item.text}
+                      width={500}
+                      height={300}
                       className="w-28 h-40 md:w-42 md:h-65 mb-2 flex-shrink-0 absolute inset-0 opacity-0 group-hover:opacity-100 cursor-pointer transition-opacity duration-700"
                     />
                   </div>
