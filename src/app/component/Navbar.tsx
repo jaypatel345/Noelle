@@ -4,7 +4,8 @@ import React, { useState, useEffect } from "react";
 import { CircleUserRound, ShoppingCart, Menu } from "lucide-react";
 import { Playfair_Display } from "next/font/google";
 import { Montez } from "next/font/google";
-import { usePathname } from "next/navigation"; 
+import Link from "next/link";
+
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -28,31 +29,31 @@ function Page() {
   return (
     <>
       <div className="bg-[#634041] flex justify-between items-center py-6 px-4 md:px-10">
-        <a href="/" >
+        <Link href="/" >
           <div className={`${montez.className} text-4xl font-bold `}>
             Noelle
           </div>
-        </a>
+        </Link>
         {/* Desktop menu */}
         <div className="hidden md:flex gap-10 font-extralight">
-          <a href="/Allproducts" className="hover:text-white/70 cursor-pointer">
+          <Link href="/Allproducts" className="hover:text-white/70 cursor-pointer">
             SHOP ALL
-          </a>
-          <a href="/New" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/New" className="hover:text-white/70 cursor-pointer">
             NEW
-          </a>
-          <a href="/Bestsellers" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/Bestsellers" className="hover:text-white/70 cursor-pointer">
             BEST SELLERS
-          </a>
-          <a href="/Face" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/Face" className="hover:text-white/70 cursor-pointer">
             FACE
-          </a>
-          <a href="/Lips" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/Lips" className="hover:text-white/70 cursor-pointer">
             LIPS
-          </a>
-          <a href="/Eyes" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/Eyes" className="hover:text-white/70 cursor-pointer">
             EYES
-          </a>
+          </Link>
         </div>
 
         {/* Right icons */}
@@ -63,7 +64,7 @@ function Page() {
             </div>
           )}
           <div className=" cursor-pointer hover:text-white/70">
-            <a href="/Login">Log In </a>
+            <Link href="/Login">Log In </Link>
           </div>
           <div className=" opacity-90 cursor-pointer hover:text-white/80">
             <ShoppingCart />
@@ -79,27 +80,27 @@ function Page() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="flex flex-col bg-[#634041] text-white px-6 py-4 space-y-3 md:hidden">
-          <a href="/shop-all" className="hover:text-white/70 cursor-pointer">
+          <Link href="/shop-all" className="hover:text-white/70 cursor-pointer">
             SHOP ALL
-          </a>
-          <a href="/new" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/new" className="hover:text-white/70 cursor-pointer">
             NEW
-          </a>
-          <a
+          </Link>
+          <Link
             href="/best-sellers"
             className="hover:text-white/70 cursor-pointer"
           >
             BEST SELLERS
-          </a>
-          <a href="/face" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/face" className="hover:text-white/70 cursor-pointer">
             FACE
-          </a>
-          <a href="/lips" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/lips" className="hover:text-white/70 cursor-pointer">
             LIPS
-          </a>
-          <a href="/eyes" className="hover:text-white/70 cursor-pointer">
+          </Link>
+          <Link href="/eyes" className="hover:text-white/70 cursor-pointer">
             EYES
-          </a>
+          </Link>
         </div>
       )}
     </>

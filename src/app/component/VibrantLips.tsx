@@ -4,6 +4,7 @@ import { Montez } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import Link from "next/link";
 
 const montez = Montez({ subsets: ["latin"], weight: ["400"] });
 const playfair = Playfair_Display({
@@ -93,7 +94,7 @@ function VibrantLips() {
             know a little more about you.
           </div>
           <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 mt-4 border hover:bg-black hover:text-white hover:border-white transition text-sm md:text-base">
-            Shop Lips
+            <Link href="/Lips">Shop Lips</Link>
           </button>
         </div>
 
@@ -110,7 +111,7 @@ function VibrantLips() {
                 src="/lips.jpg"
                 alt="Lipsticks"
                 width={500}
-                      height={300}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>

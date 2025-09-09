@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { Playfair_Display } from "next/font/google";
 import { Montez } from "next/font/google";
+import { ArrowLeftToLine } from "lucide-react";
+import Link from "next/link";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -22,9 +24,14 @@ function Page() {
     <div className=" relative flex items-center justify-center min-h-screen ">
       <div className="absolute top-6 right-6 text-sm text-gray-600 flex flex-col items-end">
         <span>Already have an account?</span>
-        <a href="/Login" className="text-blue-600 hover:underline">
+        <Link href="/Login" className="text-blue-600 hover:underline">
           Sign in
-        </a>
+        </Link>
+         <div className=" relative right-4/5 mx-31 -top-7  md:mx-[520px] hover:text-gray-500/90 cursor-pointer md:right-4/5">
+                  <Link href="/">
+                    <ArrowLeftToLine />
+                  </Link>
+                </div>
       </div>
       <div className="w-full max-w-md  p-8  text-center">
         {/* Logo */}
@@ -146,23 +153,23 @@ function Page() {
         {/* Helper Text */}
         <p className="text-xs text-gray-500 mt-4">
           We’ll email you a magic code for a password‑free sign up. Or you can{" "}
-          <a href="#" className="text-blue-600 hover:underline">
+          <Link href="#" className="text-blue-600 hover:underline">
             create a password instead
-          </a>
+          </Link>
           .
         </p>
 
         {/* Footer */}
         <div className="mt-8 absolute text-xs text-gray-400 flex justify-center left-[15%] md:left-[40%]   gap-4 bottom-8">
-          <a href="#" className="hover:underline">
+          <Link href="#" className="hover:underline">
             Privacy & Terms
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Contact Us
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Change region
-          </a>
+          </Link>
         </div>
       </div>
     </div>

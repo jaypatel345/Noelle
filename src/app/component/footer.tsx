@@ -4,6 +4,7 @@ import React from 'react'
 
 import { Playfair_Display } from "next/font/google";
 import { Instagram, Youtube, Facebook, Twitter } from "lucide-react";
+import Link from 'next/link';
 
 
 const playfair = Playfair_Display({
@@ -77,18 +78,18 @@ function Footer() {
           <p>Tel: 123-456-7890</p>
           <p>Email: info@mysite.com</p>
           <div className="flex space-x-4 mt-3 justify-center md:justify-start">
-            <a href="https://instagram.com" aria-label="Instagram">
+            <Link href="https://instagram.com" aria-label="Instagram">
             <Instagram size={17} />
-          </a>
-          <a href="https://facebook.com" aria-label="Facebook">
+          </Link>
+          <Link href="https://facebook.com" aria-label="Facebook">
             <Facebook size={17} />
-          </a>
-          <a href="https://youtube.com" aria-label="YouTube">
+          </Link>
+          <Link href="https://youtube.com" aria-label="YouTube">
             <Youtube size={17} />
-          </a>
-          <a href="https://twitter.com" aria-label="Twitter">
+          </Link>
+          <Link href="https://twitter.com" aria-label="Twitter">
             <Twitter size={17} />
-          </a>
+          </Link>
           </div>
         </div>
       </div>

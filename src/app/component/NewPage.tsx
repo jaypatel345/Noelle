@@ -95,7 +95,7 @@ function NewPage() {
     <div className="w-full ">
       <div className="flex w-full mx-auto ">
         {/* Sidebar */}
-        <MenuBar />
+        <MenuBar currentPage="New"/>
         {/* Hero Image */}
         <div className="relative w-[80%] h-[400px] mt-13 opacity-95">
           <Image

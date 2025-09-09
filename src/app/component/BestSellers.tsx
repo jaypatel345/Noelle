@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { Montez } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const montez = Montez({
   subsets: ["latin"],
@@ -267,7 +268,9 @@ function BestSellers() {
             }`}
           >
             <button className="border px-6 py-2.5 hover:bg-black hover:text-white cursor-pointer font-semibold transition duration-200">
+             <Link href="/Bestsellers">
               Shop Best Seller
+              </Link>
             </button>
           </div>
         </div>

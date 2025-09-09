@@ -5,6 +5,7 @@ import React from "react";
 import { Montez } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const montez = Montez({
   subsets: ["latin"],
@@ -52,7 +53,9 @@ function Sitewide() {
           <div className="font-bold">Use code LOVE15 at checkout</div>
           <div>
             <button className="border-black border px-4 md:px-5 py-2 md:py-3 hover:text-white hover:bg-black cursor-pointer text-sm md:text-base">
+               <Link href="/Allproducts">
               Shop All
+              </Link>
             </button>
           </div>
         </div>

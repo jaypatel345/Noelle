@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 interface menubarprop{
   currentPage:string;
@@ -7,9 +8,9 @@ function MenuBar({currentPage}:menubarprop) {
     <div className="w-56 ">
       {/* Header */}
       <div className="flex  text-gray-500 gap-1.5 px-7 py-5  ">
-        <a href="/" className="hover:text-gray-900 cursor-pointer">
+        <Link href="/" className="hover:text-gray-900 cursor-pointer">
           <div>Home</div>
-        </a>
+        </Link>
         <div>{">"}</div>
         <h2 className="text-gray-400 mb-4  pb-2">{currentPage}</h2>
       </div>
@@ -20,39 +21,39 @@ function MenuBar({currentPage}:menubarprop) {
       {/* Menu Items */}
       <ul className="space-y-2 text-gray-500 mx-7 font-extralight">
         <li>
-          <a href="Allproducts" className="block hover:text-gray-900">
+          <Link href="Allproducts" className="block hover:text-gray-900">
             All Products
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="Bestsellers" className="block hover:text-gray-900">
+          <Link href="Bestsellers" className="block hover:text-gray-900">
             Best Sellers
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="Eyes" className="block hover:text-gray-900">
+          <Link href="Eyes" className="block hover:text-gray-900">
             Eyes
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="Face" className="block hover:text-gray-900">
+          <Link href="Face" className="block hover:text-gray-900">
             Face
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="Lips" className="block hover:text-gray-900">
+          <Link href="Lips" className="block hover:text-gray-900">
             Lips
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="New" className="block hover:text-gray-900">
+          <Link href="New" className="block hover:text-gray-900">
             New
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="Nowtrending" className="block hover:text-gray-900">
+          <Link href="Nowtrending" className="block hover:text-gray-900">
             Now Trending
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
