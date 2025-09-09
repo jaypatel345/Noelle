@@ -2,7 +2,6 @@ import React from "react";
 import AnnouncementBar from "../component/AnnouncementBar";
 import Navbar from "@/app/component/Navbar";
 import Footer from "../component/footer";
-import BestSellersPage from "../component/BestSellersPage";
 import NowTrending from "../component/NowTrendingPage";
 
 function Page() {

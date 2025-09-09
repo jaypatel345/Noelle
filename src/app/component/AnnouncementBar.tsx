@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { Instagram, Search, Youtube, Facebook, Twitter } from "lucide-react";
 import Link from "next/link";
 

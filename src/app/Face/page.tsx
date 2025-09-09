@@ -2,7 +2,7 @@ import React from "react";
 import AnnouncementBar from "../component/AnnouncementBar";
 import Navbar from "@/app/component/Navbar";
 import Footer from "../component/footer";
-import EyesPage from "../component/EyesPage";
+
 import FacePage from "../component/FacePage";
 
 function Page() {
