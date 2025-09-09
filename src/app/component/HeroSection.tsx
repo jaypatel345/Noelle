@@ -56,7 +56,7 @@ function HeroSection() {
           </button>
         </div>
       </div>
-      <div className="flex gap-1.5 items-center fixed z-50 bottom-5 md:bottom-7 right-5 md:right-15 bg-[#634041] border-[#634041d7] px-4 md:px-5 py-2 md:py-3 text-[white]/80 cursor-pointer hover:text-gray-300/80  ">
+      <div className="flex gap-1.5 items-center fixed z-50 bottom-5 md:bottom-7 right-5 md:right-15 bg-[#634041] border border-[#736c6cd7] px-4 md:px-5 py-2 md:py-3 text-[white]/80 cursor-pointer hover:text-gray-300/80  ">
         <MessageSquareText size="20px" />
         
       </div>

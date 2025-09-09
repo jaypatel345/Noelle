@@ -38,7 +38,7 @@ function Footer() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm mb-16 px-6 md:px-47">
         {/* Shop */}
         <div>
-          <h3 className="font-extrabold mb-3 md:mb-6">Shop</h3>
+          <h3 className={ `${playfair.className} font-extrabold text-2xl mb-3 md:mb-6`}>Shop</h3>
           <ul className="space-y-2">
             <li >All Products</li>
             <li>New</li>
@@ -51,7 +51,7 @@ function Footer() {
 
         {/* Our Store */}
         <div>
-          <h3 className="font-extrabold mb-3 md:mb-6">Our Store</h3>
+          <h3 className={ `${playfair.className} font-extrabold text-2xl mb-3 md:mb-5`}>Our Store</h3>
           <p>500 Terry Francine Street</p>
           <p>San Francisco, CA 94158</p>
           <p className="mt-2">Monday-Friday : 11am-10pm</p>
@@ -62,7 +62,7 @@ function Footer() {
 
         {/* Policy */}
         <div>
-          <h3 className="font-extrabold mb-3 md:mb-6">Policy</h3>
+          <h3 className={ `${playfair.className} font-extrabold text-2xl mb-3 md:mb-6`}>Policy</h3>
           <ul className="space-y-2">
             <li>Shipping & Returns</li>
             <li>Store Policy</li>
@@ -73,7 +73,7 @@ function Footer() {
 
         {/* Customer Service */}
         <div>
-          <h3 className="font-extrabold mb-3 md:mb-6">Customer Service</h3>
+          <h3 className={ `${playfair.className} font-extrabold text-2xl mb-3 md:mb-6 `}>Customer Service</h3>
           <p>Tel: 123-456-7890</p>
           <p>Email: info@mysite.com</p>
           <div className="flex space-x-4 mt-3 justify-center md:justify-start">

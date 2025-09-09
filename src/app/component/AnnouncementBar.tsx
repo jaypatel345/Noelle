@@ -14,16 +14,16 @@ export default function AnnouncementBar() {
           <span className="ml-1 text-gray-300">Use promo code LOVE15</span>
         </div>
         <div className="flex gap-3.5">
-          <a href="https://instagram.com" aria-label="Instagram">
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank">
             <Instagram size={17} />
           </a>
-          <a href="https://facebook.com" aria-label="Facebook">
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank">
             <Facebook size={17} />
           </a>
-          <a href="https://youtube.com" aria-label="YouTube">
+          <a href="https://youtube.com" aria-label="YouTube" target="_blank">
             <Youtube size={17} />
           </a>
-          <a href="https://twitter.com" aria-label="Twitter">
+          <a href="https://twitter.com" aria-label="Twitter" target="_blank">
             <Twitter size={17} />
           </a>
         </div>
