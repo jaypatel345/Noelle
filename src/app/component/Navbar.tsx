@@ -1,16 +1,10 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import { CircleUserRound, ShoppingCart, Menu } from "lucide-react";
-import { Playfair_Display } from "next/font/google";
 import { Montez } from "next/font/google";
 import Link from "next/link";
 
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 const montez = Montez({
   subsets: ["latin"],
   weight: ["400"], // Montez has only one weight

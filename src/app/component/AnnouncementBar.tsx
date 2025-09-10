@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
   ];
 
   const [searchTerm, setsearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState<any[]>([]);
+  const [filteredData, setFilteredData] = useState<typeof data>([]);
 
   const handleSearchClick = () => {
     const results = data.filter(item =>
